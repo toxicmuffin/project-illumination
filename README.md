@@ -13,3 +13,7 @@ This project is to practice and implement our learnings. The main focus is the d
 Simultaneously, we will be writing documentation and content for this blog as we build it.
 
 The goal? To learn and gain experience.
+
+Dev Branch
+
+Main Branch
