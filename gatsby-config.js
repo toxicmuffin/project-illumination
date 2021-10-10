@@ -25,5 +25,16 @@ module.exports = {
       },
       __key: "pages",
     },
+    // SCSS and Tailwind
+    "gatsby-plugin-postcss",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
   ],
 };
