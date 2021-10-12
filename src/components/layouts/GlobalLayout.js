@@ -1,8 +1,8 @@
 import React from 'react'
 import Navigation from '../navigation/Navigation'
-import "./standardlayout.scss"
+import "./global-layout.scss"
 
-const StandardLayout = ({ children }) => (
+const GlobalLayout = ({ children }) => (
 <div>
 	<Navigation />
 	<main>
@@ -11,4 +11,4 @@ const StandardLayout = ({ children }) => (
 </div>
 )
 
-export default StandardLayout
+export default GlobalLayout
