@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 //data
-const FooterHeading = 'Heading'
+const FooterHeading = 'Project Illumination'
 const FooterItems = [
     {
         text: 'Home',
@@ -26,7 +26,7 @@ const TheFooter = () => {
     return (
         <footer>
             <div className='container mx-auto'>
-                <h2 className='text-xl p-4'>Project Illumination</h2>
+                <h2 className='text-xl p-4'>{FooterHeading}</h2>
                 <ul className="inline-flex">
                     {FooterItems.map(FooterItem => (
                         <li key={FooterItem.text}>

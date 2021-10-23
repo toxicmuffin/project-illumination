@@ -1,0 +1,1 @@
+https://www.gatsbyjs.com/docs/how-to/sourcing-data/sourcing-from-json-or-yaml/
