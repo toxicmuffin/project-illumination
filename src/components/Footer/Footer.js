@@ -2,62 +2,43 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 //data
-// There are two ways I can approach this...
-// I can use an array of objects and break them up by categor
-const FooterHeadings = [
-    {
-        text: 'Heading One'
-    },
-    {
-        text: 'Heading Two'
-    }
-]
+const FooterHeading = 'Heading'
 const FooterItems = [
     {
-        text: 'home',
-        link: '/',
+        text: 'Home',
+        link: '/'
     },
     {
-        text: 'lorem',
-        link: '/'
-    }
-]
-
-// or
-// I can use an array of objects of objects...?
-const FooterItemsV2 = [
+        text: 'Blog',
+        link: '/blog'
+    },
     {
-        grouping: {
-            heading: {
-                text: 'Heading One',
-            },
-            item1: {
-                text: 'item 1',
-                link: '/item1',
-            },
-            item2: {
-                text: 'item 2',
-                link: '/item2',
-            }
-        },
-        grouping: {
-            headings: 'Heading Two',
-        },
-        item1: {
-            text: 'item one',
-            link: '/itemOne',
-        },
-        item2: {
-            text: 'item two',
-            link: '/itemTwo',
-        }
+        text: 'Discover',
+        link: '/discover'
+    },
+    {
+        text: 'About',
+        link: '/about'
     }
 ]
 
-const Footer = () => {
+const TheFooter = () => {
     return (
         <footer>
-
+            <div className='container mx-auto'>
+                <h2 className='text-xl p-4'>Project Illumination</h2>
+                <ul className="inline-flex">
+                    {FooterItems.map(FooterItem => (
+                        <li key={FooterItem.text}>
+                            <Link to={FooterItem.link} className="p-4 hover:underline">
+                                {FooterItem.text}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </footer>
     )
 }
+
+export default TheFooter

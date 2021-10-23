@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '../navigation/Navigation'
+import Footer from '../Footer/Footer'
 import "./global-layout.scss"
 
 const GlobalLayout = ({ children }) => (
@@ -8,6 +9,7 @@ const GlobalLayout = ({ children }) => (
 		<main>
 			{children}
 		</main>
+		<Footer />
 	</div>
 )
 
