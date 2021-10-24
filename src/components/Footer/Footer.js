@@ -6,15 +6,15 @@ const FooterHeading = 'Project Illumination'
 const FooterItems = [
     {
         text: 'Home',
-        link: '/'
+        link: '/',
     },
     {
         text: 'Blog',
-        link: '/blog'
+        link: '/blog',
     },
     {
         text: 'Discover',
-        link: '/discover'
+        link: '/discover',
     },
     {
         text: 'About',
@@ -26,11 +26,11 @@ const TheFooter = () => {
     return (
         <footer>
             <div className='container mx-auto'>
-                <h2 className='text-xl p-4'>{FooterHeading}</h2>
+                <h2 className='text-xl p-6'>{FooterHeading}</h2>
                 <ul className="inline-flex">
                     {FooterItems.map(FooterItem => (
                         <li key={FooterItem.text}>
-                            <Link to={FooterItem.link} className="p-4 hover:underline">
+                            <Link to={FooterItem.link} className="p-6 hover:underline">
                                 {FooterItem.text}
                             </Link>
                         </li>
