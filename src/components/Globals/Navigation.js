@@ -24,7 +24,7 @@ const NavItem = [
 const Navigation = () => {
 return (
     <nav>
-      <div className='container mx-auto px-6 py-2 flex justify-between items-center text-2xl'>
+      <div className='py-2 flex justify-between items-center text-2xl'>
         <a className='' href='/'>
           🌷
         </a>

@@ -1,15 +1,15 @@
 import React from 'react'
-import Navigation from '../navigation/Navigation'
-import Footer from '../Footer/Footer'
+import Navigation from '../../Globals/Navigation'
+import TheFooter from '../../Globals/Footer'
 import "./global-layout.scss"
 
 const GlobalLayout = ({ children }) => (
-	<div>
+	<div className='container mx-auto px-6'>
 		<Navigation />
 		<main>
 			{children}
 		</main>
-		<Footer />
+		<TheFooter />
 	</div>
 )
 

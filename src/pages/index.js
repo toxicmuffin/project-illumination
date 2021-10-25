@@ -1,18 +1,14 @@
 import * as React from "react"
-import GlobalLayout from "../components/layouts/GlobalLayout"
+import GlobalLayout from "../components/layouts/GlobalLayout/GlobalLayout"
 import Featured from "../components/Featured/Featured"
+import Feed from "../components/Featured/Feed"
 // data
 
-// markup
 const IndexPage = () => {
   return (
     <GlobalLayout>
       <Featured />
-      {/* 
-      - Feed
-      - More Featured
-      - Content
-      */}
+      <Feed />
     </GlobalLayout>
   )
 }

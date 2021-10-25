@@ -1,1 +1,8 @@
 https://www.gatsbyjs.com/docs/how-to/sourcing-data/sourcing-from-json-or-yaml/
+
+- How to make config files and how to have them be referenced.
+
+- How to refrence Markdown file
+
+- How to create Markdown/ Blogpost Route
+    - https://www.gatsbyjs.com/docs/how-to/routing/adding-markdown-pages/

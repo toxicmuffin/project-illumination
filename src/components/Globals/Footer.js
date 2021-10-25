@@ -25,12 +25,12 @@ const FooterItems = [
 const TheFooter = () => {
     return (
         <footer>
-            <div className='container mx-auto'>
-                <h2 className='text-xl p-6'>{FooterHeading}</h2>
+            <div>
+                <h2 className='text-xl py-6'>{FooterHeading}</h2>
                 <ul className="inline-flex">
                     {FooterItems.map(FooterItem => (
                         <li key={FooterItem.text}>
-                            <Link to={FooterItem.link} className="p-6 hover:underline">
+                            <Link to={FooterItem.link} className="p-3 hover:underline">
                                 {FooterItem.text}
                             </Link>
                         </li>
