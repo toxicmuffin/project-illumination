@@ -26,7 +26,7 @@ const TheFooter = () => {
     return (
         <footer>
             <div>
-                <h2 className='text-xl py-6'>{FooterHeading}</h2>
+                <h2 className='text-xl p-3'>{FooterHeading}</h2>
                 <ul className="inline-flex">
                     {FooterItems.map(FooterItem => (
                         <li key={FooterItem.text}>
