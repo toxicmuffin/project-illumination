@@ -1,0 +1,23 @@
+{
+    "footerContent": {
+        "footerHeader": "Project Illumination",
+        "footerItems": [
+            {
+                "text": "Home",
+                "link": "/"
+            },
+            {
+                "text": "Blog",
+                "link": "/blog"
+            },
+            {
+                "text": "Discover",
+                "link": "/discover"
+            },
+            {
+                "text": "About",
+                "link": "/about"
+            }
+        ]
+    }
+}
